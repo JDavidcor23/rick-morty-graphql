@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rick-morty-graphql/static/css/main.073c9b0a.css",
+    "main.js": "/rick-morty-graphql/static/js/main.c12b5b0a.js",
+    "static/js/787.8204113d.chunk.js": "/rick-morty-graphql/static/js/787.8204113d.chunk.js",
+    "static/media/logo.svg": "/rick-morty-graphql/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/rick-morty-graphql/index.html",
+    "main.073c9b0a.css.map": "/rick-morty-graphql/static/css/main.073c9b0a.css.map",
+    "main.c12b5b0a.js.map": "/rick-morty-graphql/static/js/main.c12b5b0a.js.map",
+    "787.8204113d.chunk.js.map": "/rick-morty-graphql/static/js/787.8204113d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.c12b5b0a.js"
+  ]
+}
