@@ -49,9 +49,11 @@ const History = ({ allCharacters, setCharacter }) => {
                 <H4>{character.name}</H4>
               </DivOne>
               <div>
-                <ButtonView onClick={() => setCharacter(character)}>
-                  VIEW
-                </ButtonView>
+                <a href="#info">
+                  <ButtonView onClick={() => setCharacter(character)}>
+                    VIEW
+                  </ButtonView>
+                </a>
               </div>
             </ListLi>
           ))}

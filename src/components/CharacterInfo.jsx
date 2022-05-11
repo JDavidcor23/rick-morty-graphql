@@ -3,7 +3,7 @@ import { Section, Ul, Li, MainSection, Img } from "../styles/HomeStyled";
 
 const CharacterInfo = ({ character, dateCharacter }) => {
   return (
-    <MainSection>
+    <MainSection id="info">
       <figure>
         <Img src={character.image} alt="" />
       </figure>
@@ -12,32 +12,32 @@ const CharacterInfo = ({ character, dateCharacter }) => {
         <p>CHARACTER ID: {character.id}</p>
         <div>
           <Ul border="none">
-            <Li size="1.2rem">Status: </Li>
-            <Li size="1.2rem">{character.status}</Li>
+            <Li>Status: </Li>
+            <Li>{character.status}</Li>
           </Ul>
           <Ul border="1px solid gray">
-            <Li size="1.2rem">Species: </Li>
-            <Li size="1.2rem">{character.species}</Li>
+            <Li>Species: </Li>
+            <Li>{character.species}</Li>
           </Ul>
           <Ul border="1px solid gray">
-            <Li size="1.2rem">Type: </Li>
-            <Li size="1.2rem">{character.type}</Li>
+            <Li>Type: </Li>
+            <Li>{character.type}</Li>
           </Ul>
           <Ul border="1px solid gray">
-            <Li size="1.2rem">Gender: </Li>
-            <Li size="1.2rem">{character.gender}</Li>
+            <Li>Gender: </Li>
+            <Li>{character.gender}</Li>
           </Ul>
           <Ul border="1px solid gray">
-            <Li size="1.2rem">Origin: </Li>
+            <Li>Origin: </Li>
             <Li size="0.9rem">{character.origin.name}</Li>
           </Ul>
           <Ul border="1px solid gray">
-            <Li size="1.2rem">Location: </Li>
+            <Li>Location: </Li>
             <Li size="0.9rem">{character.location.name}</Li>
           </Ul>
           <Ul border="none">
-            <Li size="1.2rem">Created at: </Li>
-            <Li size="1.2rem">{dateCharacter}</Li>
+            <Li>Created at: </Li>
+            <Li>{dateCharacter}</Li>
           </Ul>
         </div>
       </Section>

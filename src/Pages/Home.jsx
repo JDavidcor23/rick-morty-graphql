@@ -28,7 +28,7 @@ const Home = () => {
       {character ? (
         <CharacterInfo character={character} dateCharacter={dateCharacter} />
       ) : (
-        <h2>No se a cargado ningun personaje</h2>
+        <h2>No se ha cargado ningún personaje</h2>
       )}
       {result.loading ? (
         <ButtonGet display="flex" center="center">
@@ -40,7 +40,7 @@ const Home = () => {
             showCharacter();
           }}
         >
-          VER
+          GENERATE
         </ButtonGet>
       )}
       {allCharacters.length > 0 && (

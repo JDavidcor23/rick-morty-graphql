@@ -33,7 +33,7 @@ export const Ul = styled.ul`
     justify-content: space-between;
 `
 export const Li = styled.li`
-    font-size: ${(props)=> props.size};
+    font-size: ${(props)=> props.size || `1.2rem`};
     margin:10px 0;
     color:white;
     list-style:none ;
