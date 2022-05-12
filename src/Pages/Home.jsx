@@ -44,7 +44,7 @@ const Home = () => {
         </ButtonGet>
       )}
       {allCharacters.length > 0 && (
-        <History allCharacters={allCharacters} setCharacter={setCharacter} />
+        <History allCharacters={allCharacters} setCharacter={setCharacter} setDateCharacter={setDateCharacter} />
       )}
     </main>
   );

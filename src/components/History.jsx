@@ -1,5 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import { getDateCharacter } from "../function/getDate";
 import {
   ListLi,
   ImgList,
@@ -18,7 +19,11 @@ const theme = {
   },
 };
 
-const History = ({ allCharacters, setCharacter }) => {
+const History = ({ allCharacters, setCharacter, setDateCharacter }) => {
+  const view = (character) => {
+    setDateCharacter(getDateCharacter(character.created));
+    setCharacter(character);
+  };
   const [filterCharaters, setFilterCharaters] = React.useState("");
   const handleSearch = ({ target }) => {
     setFilterCharaters(target.value);
@@ -50,9 +55,7 @@ const History = ({ allCharacters, setCharacter }) => {
               </DivOne>
               <div>
                 <a href="#info">
-                  <ButtonView onClick={() => setCharacter(character)}>
-                    VIEW
-                  </ButtonView>
+                  <ButtonView onClick={() => view(character)}>VIEW</ButtonView>
                 </a>
               </div>
             </ListLi>
