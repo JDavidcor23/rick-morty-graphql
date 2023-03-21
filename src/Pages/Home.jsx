@@ -28,7 +28,7 @@ const Home = () => {
       {character ? (
         <CharacterInfo character={character} dateCharacter={dateCharacter} />
       ) : (
-        <h2>No se ha cargado ningún personaje</h2>
+        <h2>No characters have been loaded</h2>
       )}
       {result.loading ? (
         <ButtonGet display="flex" center="center">
@@ -44,7 +44,11 @@ const Home = () => {
         </ButtonGet>
       )}
       {allCharacters.length > 0 && (
-        <History allCharacters={allCharacters} setCharacter={setCharacter} setDateCharacter={setDateCharacter} />
+        <History
+          allCharacters={allCharacters}
+          setCharacter={setCharacter}
+          setDateCharacter={setDateCharacter}
+        />
       )}
     </main>
   );
